@@ -1,0 +1,198 @@
+name: premium_pay_new
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.7.3
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_screenutil: ^5.7.0
+  mask_text_input_formatter: ^2.4.0
+  image_picker: ^0.8.7+3
+  table_calendar: ^3.0.9
+  syncfusion_flutter_datepicker: ^25.2.4
+  equatable: ^2.0.5
+
+  # Network
+  dio: ^4.0.6
+  http:
+  # state management
+  flutter_bloc: ^8.1.1
+  # Cache & Storage
+  flutter_secure_storage: ^8.0.0
+  hive: ^2.2.3
+  hive_flutter:
+
+  # Others
+  easy_localization: ^3.0.0
+  
+  flutter_svg: ^2.0.5
+  flutter_dotenv: ^5.0.2
+  connectivity_plus: ^3.0.2
+  internet_connection_checker: ^1.0.0+1
+  cached_network_image: ^3.2.3
+  pinput: ^2.2.23
+
+  lottie: ^2.6.0
+  url_launcher: ^6.1.9
+  # geolocator: ^9.0.2
+  rename: ^3.0.1
+  # web_socket_channel: ^2.3.0
+  # fl_country_code_picker: ^0.1.2
+  # external_app_launcher: ^3.1.0
+  permission_handler: ^10.2.0
+  share_plus: ^7.0.2
+  image_gallery_saver: ^2.0.3
+  path_provider: ^2.0.15
+  another_flushbar: ^1.12.30
+  # qr code
+  qr_flutter: ^4.1.0
+  intl: ^0.19.0
+
+  device_info_plus: ^9.0.2
+  geolocator: ^9.0.2
+  myid: ^1.0.7
+  material_table_view: ^4.0.2
+  flutter_pdfview: ^1.3.2
+  translator: ^0.1.7
+  pdf: ^3.1.0
+  open_file: ^3.3.2
+  pdf_manipulator: ^0.5.9
+  flutter_windowmanager: ^0.2.0
+  flutter_staggered_animations: ^1.1.1
+  # flutter_launcher_icons: ^0.13.1
+  flutter_slidable: ^3.0.1
+  promise: ^0.0.1
+  animations: ^2.0.11
+  dart_jsonwebtoken: ^2.13.0
+  fuzzywuzzy: ^1.1.6
+  pdf_merger: ^0.0.6
+
+  
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo_bg.png"
+  min_sdk_android: 21
+  # adaptive_icon_background: "#ffffff"
+  # adaptive_icon_foreground: "#ffffff"
+  # remove_alpha_ios: true
+
+
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/
+    - assets/img/
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+    - assets/fonts/uzbek/
+    - assets/languages/
+    - assets/animations/
+    - assets/docs/
+    - .env
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+  - family: Inter
+    fonts:
+      - asset: assets/fonts/Inter-Black.ttf
+      - asset: assets/fonts/Inter-Regular.ttf
+      - asset: assets/fonts/Inter-Light.ttf
+      - asset: assets/fonts/Inter-Medium.ttf
+      - asset: assets/fonts/Inter-SemiBold.ttf
+      - asset: assets/fonts/Inter-Thin.ttf
+      
+      - asset: assets/fonts/Inter-Bold.ttf
+        weight: 700
+  - family: NotoSans
+    fonts:
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-Black.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-BlackItalic.ttf
+      - asset: assets/fonts/uzbek/NotoSans_Condensed-Bold.ttf
+        weight: 700
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-BoldItalic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-ExtraBold.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-ExtraBoldItalic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-ExtraLight.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-ExtraLightItalic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-Italic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-Light.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-LightItalic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-Medium.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-MediumItalic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-Regular.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-SemiBold.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-SemiBoldItalic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-Thin.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-ThinItalic.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-Black.ttf
+      # - asset: assets/fonts/uzbek/NotoSans_Condensed-BlackItalic.ttf
+      
+      
+        
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
